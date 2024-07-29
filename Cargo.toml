@@ -1,0 +1,20 @@
+[package]
+name = "template"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+cortex-m = { version = "0.7.7", features = ["critical-section-single-core"] }
+embedded-hal = "1.0.0"
+stm32f4xx-hal = { version = "0.21.0", features = ["stm32f446"]}
+switch-hal = "0.4.0"
+unwrap-infallible = "0.1.5"
+cortex-m-rt = "0.7.3"
+panic-probe = { version = "0.3.1"}
+panic-halt = "^0.2.0"
+cty = "0.2.2"
+
+
+[build-dependencies]
+bindgen = "0.69.4"
+cc = "1.1.6"
